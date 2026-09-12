@@ -1,6 +1,6 @@
 {
-  "name": "SSS Autofill",
-  "description": "Open source autofill extension for Shopify, Supreme, Stripe and Shopee Malaysia",
+  "name": "SUPER AUTOFILL",
+  "description": "autofill extension for Shopify, Supreme, Stripe and Shopee Malaysia",
   "version": "0.2.2",
   "manifest_version": 3,
   "minimum_chrome_version": "120",
@@ -9,7 +9,7 @@
     "128": "icons/icon_128.png"
   },
   "action": {
-    "default_title": "sss-autofill",
+    "default_title": "SUPER AUTOFILL",
     "default_popup": "popup/popup.html"
   },
   "background": {

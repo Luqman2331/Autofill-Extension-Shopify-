@@ -1,0 +1,31 @@
+{
+  "name": "autofill",
+  "version": "0.2.2",
+  "private": true,
+  "type": "module",
+  "description": "Open source autofill extension for Shopify, Supreme, Stripe and Shopee Malaysia",
+  "author": "Alex.#4321",
+  "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build",
+    "build:dev": "vue-tsc --noEmit && vite build --mode development",
+    "watch": "vite build --watch",
+    "watch:dev": "vite build --watch --mode development",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "vue": "^3.5.42"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.2.9",
+    "@types/node": "^22.0.0",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "sass": "^1.104.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.0",
+    "vue-tsc": "^3.3.11"
+  }
+}

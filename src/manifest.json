@@ -1,0 +1,87 @@
+{
+  "name": "SSS Autofill",
+  "description": "Open source autofill extension for Shopify, Supreme, Stripe and Shopee Malaysia",
+  "version": "0.2.2",
+  "manifest_version": 3,
+  "minimum_chrome_version": "120",
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "action": {
+    "default_title": "sss-autofill",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "inject/all.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://js.stripe.com/*",
+        "https://checkout.stripe.com/*"
+      ],
+      "js": [
+        "inject/stripe.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://*.supremenewyork.com/*",
+        "https://*.supreme.com/*"
+      ],
+      "js": [
+        "inject/supreme.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "inject/shopify.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://*.shopifycs.com/*",
+        "https://checkout.pci.shopifyinc.com/*"
+      ],
+      "js": [
+        "inject/shopify-card.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://*.shopee.com.my/*"
+      ],
+      "js": [
+        "inject/shopee.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

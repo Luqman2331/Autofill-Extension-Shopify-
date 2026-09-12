@@ -11,7 +11,7 @@ const { t } = useLocale();
   <header class="app-header">
     <div class="brand" aria-label="SSS Autofill">
       <span class="brand-mark"><VIcon name="bolt" /></span>
-      <span class="wordmark">sss<span>autofill</span></span>
+      <span class="wordmark">Luqman<span>Project</span></span>
     </div>
     <button type="button" class="status-button" :class="{ enabled: settings.enabled }"
       :aria-pressed="settings.enabled" :aria-label="t('turnOnAutofill')"

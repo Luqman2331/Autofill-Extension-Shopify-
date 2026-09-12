@@ -1,9 +1,6 @@
-# SSS Autofill
+# LuqmanProject
 
 A small Chrome Manifest V3 autofill extension for Shopify, Supreme, Stripe and Shopee Malaysia.
-Based on alexsnkr/sss-autofill, commit `b94eed8b6edb06981440b3c2ae9a1ff80a4c7b69`.
-Original author: Alex.#4321. License: GPL-3.0-only; see LICENSE.
-
 ## Build and load
 
 Use Node **22.12 or later** (the included `.nvmrc` selects Node 22):

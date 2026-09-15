@@ -1,4 +1,4 @@
-# LuqmanProject
+# Chatgpt6 Astra Project
 
 A small Chrome Manifest V3 autofill extension for Shopify, Supreme, Stripe and Shopee Malaysia.
 ## Build and load
